@@ -58,7 +58,7 @@ namespace Conta
         public String Sacar(double previa, double saque)
         {
             
-            if (previa > saque)
+            if (previa >= saque)
             {
                 Saldo -= saque;
                 return "\nSAQUE AUTORIZADO!!";
